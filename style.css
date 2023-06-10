@@ -1,0 +1,115 @@
+.bar1,
+.bar2,
+.bar3 {
+    width: 25px;
+    height: 3px;
+    background-color: rgb(207, 227, 246);
+    margin: 5px 0;
+    transition: 0.4s;
+}
+
+/* Rotate first bar */
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-7px, 2px);
+    transform: rotate(-45deg) translate(-7px, 2px);
+    float: right;
+    position: relative;
+    width: 20px;
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+    opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-7px, -2px);
+    transform: rotate(45deg) translate(-7px, -2px);
+    float: right;
+    position: relative;
+    width: 20px;
+}
+
+#navList {
+    display: none;
+    position: relative;
+    float: right;
+    justify-content: end;
+    background-color: rgb(46, 47, 70);
+    padding-bottom: 3%;
+    padding-left: 3%;
+    padding-right: 3%;
+    border-radius: 6px;
+}
+
+.bars {
+    cursor: pointer;
+    position: relative;
+    float: right;
+    justify-content: end;
+}
+
+.container {
+
+    display: grid;
+    grid-gap: 25px;
+
+}
+
+body {
+    margin-top: 10px;
+    background-image: url("assets/home/background-home-mobile.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: rgb(252, 255, 242);
+    font-family: Trispace system-ui;
+    font-size: small;
+    font-feature-settings: "liga" 0;
+}
+
+.logo {
+    width: 37px;
+}
+
+a:link {
+    text-decoration: none;
+
+}
+
+a:visited {
+    color: rgb(220, 235, 250);
+    text-decoration: none;
+}
+
+a:hover {
+    color: #8b8b0f;
+    text-decoration: none;
+}
+h1{
+    font-size: 6em;
+text-transform: uppercase;
+margin: 4%;
+}
+#firstLine{
+    font-size: 1.3em;
+    text-transform: uppercase;  
+}
+.content{
+    text-align: center;
+width: 90%;
+margin-left: 5%;
+
+}
+#explore{
+    margin-top: 40%;
+    margin-left: 30%;
+    background-color:  rgb(252, 255, 242);
+    text-transform: uppercase;
+    padding: 40px 2px;
+    color: black; 
+    border-radius: 100px;
+    width: 7rem;
+
+}
