@@ -147,12 +147,34 @@ h1 {
     }
 
     .line {
-        width: 10rem;
+        width: 5rem;
+        /* flex: 0 1 100%; */
+        margin-top: 18%;
         height: 0.05rem;
         background-color: rgb(245, 6, 6);
+        flex-grow: 1;
+    }
+
+    .top {
+        /* align-items: baseline; */
+        display: flex;
+
     }
 
     #navList {
         display: flex;
+
+        justify-content: end;
+        background-color: rgb(39, 40, 53);
+        padding-top: 2%;
+        padding-left: 3%;
+        padding-right: 3%;
+        border-radius: 6px;
+
+        box-shadow: -4px -17px 59px -10px rgba(252, 249, 249, 0.75);
+        -webkit-box-shadow: -4px -17px 59px -10px rgba(181, 177, 177, 0.75);
+        -moz-box-shadow: -4px -17px 59px -10px rgba(108, 106, 106, 0.75);
+
     }
+    #navList >a{margin-left: 5px;}
 }
