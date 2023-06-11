@@ -8,6 +8,14 @@
     transition: 0.4s;
 }
 
+.line {
+    flex: 0 1 90%;
+}
+
+.navBar {
+    display: flex;
+}
+
 /* Rotate first bar */
 
 .change .bar1 {
@@ -42,9 +50,10 @@
     padding-left: 3%;
     padding-right: 3%;
     border-radius: 6px;
-    box-shadow: -4px -17px 59px -10px  rgba(252, 249, 249, 0.75);
+    box-shadow: -4px -17px 59px -10px rgba(252, 249, 249, 0.75);
     -webkit-box-shadow: -4px -17px 59px -10px rgba(181, 177, 177, 0.75);
-    -moz-box-shadow: -4px -17px 59px -10px rgba(108, 106, 106, 0.75);}
+    -moz-box-shadow: -4px -17px 59px -10px rgba(108, 106, 106, 0.75);
+}
 
 .bars {
     cursor: pointer;
@@ -90,29 +99,60 @@ a:hover {
     color: #8b8b0f;
     text-decoration: none;
 }
-h1{
+
+h1 {
     font-size: 6em;
-text-transform: uppercase;
-margin: 4%;
+    text-transform: uppercase;
+    margin: 4%;
 }
-#firstLine{
+
+#firstLine {
     font-size: 1.3em;
-    text-transform: uppercase;  
+    text-transform: uppercase;
 }
-.content{
+
+.content {
     text-align: center;
-width: 90%;
-margin-left: 5%;
+    width: 90%;
+    margin-left: 5%;
 
 }
-#explore{
+
+#explore {
     margin-top: 40%;
     margin-left: 30%;
-    background-color:  rgb(252, 255, 242);
+    background-color: rgb(252, 255, 242);
     text-transform: uppercase;
     padding: 40px 2px;
-    color: black; 
+    color: black;
     border-radius: 100px;
     width: 7rem;
 
+}
+
+@media (min-width: 768px) {
+
+    body {
+        margin-top: 10px;
+        background-image: url("assets/home/background-home-desktop.jpg");
+    }
+
+    .bar1,
+    .bar2,
+    .bar3 {
+        display: none;
+        width: 0px;
+        height: 0px;
+        margin: 0px 0;
+    }
+
+    .line {
+        width: 10rem;
+        height: 0.05rem;
+        background-color: rgb(245, 6, 6);
+    }
+
+    #navList {
+        display: flex;
+    }
 }
