@@ -38,11 +38,13 @@
     float: right;
     justify-content: end;
     background-color: rgb(46, 47, 70);
-    padding-bottom: 3%;
+    padding-bottom: 2%;
     padding-left: 3%;
     padding-right: 3%;
     border-radius: 6px;
-}
+    box-shadow: -4px -17px 59px -10px  rgba(252, 249, 249, 0.75);
+    -webkit-box-shadow: -4px -17px 59px -10px rgba(181, 177, 177, 0.75);
+    -moz-box-shadow: -4px -17px 59px -10px rgba(108, 106, 106, 0.75);}
 
 .bars {
     cursor: pointer;
