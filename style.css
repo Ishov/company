@@ -147,12 +147,11 @@ h1 {
 
     .line {
         position: absolute;
-        width: 100%;
+        width: 94%;
         left: 50%;
         margin-left: -45%;
         /* width: rem; */
         flex: 0 1 30%;
-
         margin-top: 23px;
         height: 0.8px;
         background-color: #f2f2f2;
