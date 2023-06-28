@@ -243,7 +243,7 @@ h1 {
     body {
         margin-top: 10px;
         background-image: url("assets/home/background-home-desktop.jpg");
-        background-size: 100%;
+        background-size: 100% auto;
         /* Center and scale the image nicely */
         background-position: center;
         /* background-repeat: no-repeat; */
