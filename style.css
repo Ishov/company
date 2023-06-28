@@ -70,6 +70,10 @@
 body {
     margin-top: 10px;
     background-image: url("assets/home/background-home-mobile.jpg");
+    background-size: 100%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    /* background-repeat: no-repeat; */
     background-size: cover;
     background-repeat: no-repeat;
     color: rgb(252, 255, 242);
@@ -125,15 +129,12 @@ h1 {
     color: black;
     border-radius: 100px;
     width: 7rem;
+    text-align: center;
 
 }
 
 @media (min-width: 768px) {
 
-    body {
-        margin-top: 10px;
-        background-image: url("assets/home/background-home-desktop.jpg");
-    }
 
     .bar1,
     .bar2,
@@ -143,11 +144,12 @@ h1 {
         height: 0px;
         margin: 0px 0;
     }
+
     .line {
-         position: absolute;
+        position: absolute;
         width: 100%;
         left: 50%;
-        margin-left: -45%; 
+        margin-left: -45%;
         /* width: rem; */
         flex: 0 1 30%;
 
@@ -173,6 +175,7 @@ h1 {
         justify-content: space-between;
         /* background-color: #333; */
         display: flex;
+
     }
 
     /* 
@@ -197,16 +200,75 @@ h1 {
         /* -webkit-box-shadow: -4px -17px 59px -10px rgba(181, 177, 177, 0.75); */
         /* -moz-box-shadow: -4px -17px 59px -10px rgba(108, 106, 106, 0.75);  */
 
-        }
-    #navList >a{
+    }
+
+    #navList>a {
         float: left;
         display: block;
         color: #f2f2f2;
         text-align: center;
         padding: 14px 16px;
         text-decoration: none;
-        font-size: 17px;        
+        font-size: 17px;
         margin-left: 6px;
         border-radius: 5px;
     }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    body {
+        margin-top: 10px;
+        background-image: url("assets/home/background-home-tablet.jpg");
+        background-position: center;
+        /* background-repeat: no-repeat; */
+        background-size: cover;
+        background-repeat: no-repeat;
     }
+
+    .pageBody {
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap;
+
+    }
+
+    #explore {
+        margin-top: 15%;
+
+    }
+}
+
+@media (min-width: 992px) {
+
+    body {
+        margin-top: 10px;
+        background-image: url("assets/home/background-home-desktop.jpg");
+        background-size: 100%;
+        /* Center and scale the image nicely */
+        background-position: center;
+        /* background-repeat: no-repeat; */
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .pageBody {
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap;
+
+    }
+
+    #explore {
+        margin-top: 15%;
+        margin-left: 30%;
+
+    }
+
+    .content {
+        /* margin-top: 12rem; */
+        margin-top: 10%;
+        display: block;
+        width: 40%;
+        text-align: center;
+    }
+}
