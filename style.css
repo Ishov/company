@@ -39,7 +39,6 @@
     position: relative;
     width: 20px;
 }
-
 #navList {
     display: none;
     position: relative;
@@ -221,6 +220,7 @@ h1 {
         border-radius: 5px;
         flex-flow: row nowrap;
 width: 20.7%;
+opacity: 1;
     }
 }
 
