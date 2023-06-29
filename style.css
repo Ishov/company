@@ -39,6 +39,7 @@
     position: relative;
     width: 20px;
 }
+
 #navList {
     display: none;
     position: relative;
@@ -74,7 +75,6 @@ body {
     background-size: 100%;
     /* Center and scale the image nicely */
     background-position: center;
-    /* background-repeat: no-repeat; */
     background-size: cover;
     background-repeat: no-repeat;
     color: rgb(252, 255, 242);
@@ -90,7 +90,6 @@ body {
 a:link {
     text-decoration: none;
     color: rgb(220, 235, 250);
-
 }
 
 a:visited {
@@ -118,12 +117,11 @@ h1 {
     text-align: center;
     width: 90%;
     margin-left: 5%;
-
 }
 
 #explore {
-    margin-top: 40%;
-    margin-left: 40%;
+    margin-top: 35%;
+    margin-left: 42.5%;
     background-color: rgb(252, 255, 242);
     text-transform: uppercase;
     padding: 40px 2px;
@@ -131,7 +129,25 @@ h1 {
     border-radius: 100px;
     width: 7rem;
     text-align: center;
+}
 
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(39, 40, 53);
+    color: white;
+    text-align: center;
+    opacity: .7;
+    font-size: 17px;
+    display: flex;
+    flex-direction: row-reverse;
+
+}
+
+.footer>.logo {
+    margin: 10px;
 }
 
 @media (min-width: 768px) {
@@ -151,13 +167,11 @@ h1 {
         width: 37%;
         left: 50%;
         margin-left: -45%;
-        /* width: rem; */
         flex: 0 1 30%;
         margin-top: 23px;
         height: 0.8px;
         background-color: #f2f2f2;
         opacity: 0.3;
-        /* flex-grow: 1; */
     }
 
     .top #navList a:hover {
@@ -181,32 +195,13 @@ h1 {
         flex-wrap: nowrap;
     }
 
-    /* 
-    .top {
-        display: flex;
-        overflow: hidden;
-
-    } */
-
     #navList {
         width: 58.4%;
-
         display: block;
         padding: 0%;
         margin: 0%;
         display: flex;
         opacity: .5;
-        /* justify-content: end;
-        background-color: rgb(39, 40, 53);
-        padding-top: 2%;
-        padding-left: 3%;
-        padding-right: 3%;
-        border-radius: 6px;
-*/
-        /* box-shadow: -4px -17px 59px -10px rgba(252, 249, 249, 0.75); */
-        /* -webkit-box-shadow: -4px -17px 59px -10px rgba(181, 177, 177, 0.75); */
-        /* -moz-box-shadow: -4px -17px 59px -10px rgba(108, 106, 106, 0.75);  */
-
     }
 
     #navList>a {
@@ -219,17 +214,16 @@ h1 {
         margin-left: 6px;
         border-radius: 5px;
         flex-flow: row nowrap;
-width: 20.7%;
-opacity: 1;
+        width: 20.7%;
+        opacity: 1;
     }
 }
 
-@media (min-width: 768px) and (max-width: 1199.9px) {
+@media (min-width: 768px) and (max-width: 991.98px) {
     body {
         margin-top: 10px;
         background-image: url("assets/home/background-home-tablet.jpg");
         background-position: center;
-        /* background-repeat: no-repeat; */
         background-size: cover;
         background-repeat: no-repeat;
     }
@@ -239,16 +233,14 @@ opacity: 1;
         display: flex;
         align-items: flex-start;
         flex-wrap: wrap;
-
     }
 
     #explore {
         margin-top: 15%;
-
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
 
     body {
         margin-top: 10px;
@@ -256,7 +248,6 @@ opacity: 1;
         background-size: 100% auto;
         /* Center and scale the image nicely */
         background-position: center;
-        /* background-repeat: no-repeat; */
         background-size: cover;
         background-repeat: no-repeat;
     }
@@ -265,13 +256,13 @@ opacity: 1;
         display: flex;
         align-items: flex-start;
         flex-wrap: wrap;
-
+        align-content: space-between;
     }
 
     #explore {
         margin-top: 15%;
         margin-left: 30%;
-
+        margin-bottom: 40%;
     }
 
     .content {
