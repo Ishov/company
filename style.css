@@ -127,7 +127,8 @@ h1 {
     padding: 40px 2px;
     color: black;
     border-radius: 100px;
-    width: 7rem;
+    width: 6.5rem;
+    font-family: 'Courier New', Courier, monospace;
     text-align: center;
 }
 
@@ -234,11 +235,6 @@ h1 {
         display: flex;
         align-items: flex-start;
         flex-wrap: wrap;
-    }
-
-    #explore {
-        margin-top: 15%;
-        margin-bottom: 33%;
     }
 }
 
