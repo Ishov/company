@@ -136,7 +136,7 @@ h1 {
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: rgb(39, 40, 53);
+    background-color: rgb(49, 39, 53);
     color: white;
     text-align: center;
     opacity: .7;
@@ -149,6 +149,7 @@ h1 {
 .footer>.logo {
     margin: 10px;
 }
+.footer>.cr{margin-top: 1.5rem;}
 
 @media (min-width: 768px) {
 
