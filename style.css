@@ -236,6 +236,10 @@ h1 {
         align-items: flex-start;
         flex-wrap: wrap;
     }
+    #explore {
+        margin-top: 15%;
+        margin-bottom: 33%;
+    }
 }
 
 @media (min-width: 992px) {
